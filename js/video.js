@@ -48,11 +48,11 @@ document.querySelector("#skip").addEventListener("click", function() {
 document.querySelector("#mute").addEventListener("click", function() {
 	if (video.muted){
 		video.muted = false;
-		document.querySelector.innerHTML = 'Unute'
+		document.querySelector("#mute").innerHTML = 'Mute';
 	}
 	else{
 		video.muted = true;
-		document.querySelector.innerHTML = 'Mmute'
+		document.querySelector("#mute").innerHTML = 'Unmute';
 	}
 });
 
@@ -74,23 +74,3 @@ document.querySelector("#slider").addEventListener("click", function() {
 });
 
 
-// //Change the volume based on the slider
-// var volumeControl = document.getElementById('slider');
-// function slide(){
-// 	console.log('here')
-// 	volumeControl.addEventListener('change',function(){
-// 		   video.volume = this.value;
-// 	});
-// 	console.log(video.volume)
-// }
-
-// function style(){
-// 	console.log("styled")
-// 	var element = document.createElement("link");
-// 	element.setAttribute("rel", "stylesheet");
-// 	element.setAttribute("type", "text/css");
-// 	element.setAttribute("href", "video.css");
-// 	document.getElementsByTagName("vintage")[0].appendChild(element);
-// }
-
-// </script>
